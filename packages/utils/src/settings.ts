@@ -8,9 +8,9 @@ try {
 }
 
 export class Settings {
-  public static readonly ADDON_NAME = process.env.ADDON_NAME ?? 'AIOStreams';
+  public static readonly ADDON_NAME = process.env.ADDON_NAME ?? 'AIOStreams CF';
   public static readonly ADDON_ID =
-    process.env.ADDON_ID || 'aiostreams.viren070.com';
+    process.env.ADDON_ID || 'CF.aiostreams.viren070.com';
   public static readonly PORT = process.env.PORT || 3000;
   public static readonly BRANDING =
     process.env.BRANDING ?? process.env.NEXT_PUBLIC_ELFHOSTED_BRANDING;
@@ -88,7 +88,7 @@ export class Settings {
     : 1000;
   public static readonly DEFAULT_TIMEOUT = process.env.DEFAULT_TIMEOUT
     ? parseInt(process.env.DEFAULT_TIMEOUT)
-    : 15000;
+    : 5000;
 
   // MediaFlow settings
   public static readonly DEFAULT_MEDIAFLOW_URL =
