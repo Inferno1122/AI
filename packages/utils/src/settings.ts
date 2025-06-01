@@ -141,11 +141,11 @@ const customConfigs = makeValidator((x) => {
 
 export const Settings = cleanEnv(process.env, {
   ADDON_NAME: str({
-    default: 'AIOStreams',
+    default: 'AIOStreams CF',
     desc: 'Name of the addon',
   }),
   ADDON_ID: str({
-    default: 'aiostreams.viren070.com',
+    default: 'cf.aiostreams.viren070.com',
     desc: 'ID of the addon',
   }),
   PORT: port({
@@ -277,7 +277,7 @@ export const Settings = cleanEnv(process.env, {
   }),
 
   DEFAULT_TIMEOUT: num({
-    default: 15000,
+    default: 5000,
     desc: 'Default timeout for the addon',
   }),
 
